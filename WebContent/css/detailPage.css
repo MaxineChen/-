@@ -1,0 +1,151 @@
+/*-------------------------left--------------------------------------------------*/
+div.picture {
+    width: 500px;
+    height:100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    position:fixed;
+    margin-left: 10%;
+}
+div.article-link {
+    width: auto;
+    background-color: rgba(40,40,40,1);
+    position: absolute;
+    top:-20px;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    margin-left: 5%
+}
+div.article-link a:hover, div.article-link a:link, div.article-link a:visited{
+    color: white
+}
+div.article-title {
+    height: auto;
+    width: 500px;
+    background-color: rgba(50,50,50,0.3);
+    border-top: 1px solid #CCCCCC;
+    position:fixed;
+    margin-left: 10%;
+    left: 0px;
+    bottom: 0px;
+}
+p#article-title-title {
+    font-size: 30px;  /*change according to window size*/
+    color: white;
+    margin-left: 60px;  /*change according to window size*/
+    margin-right: 60px;  /*change according to window size*/
+    margin-top: 40px;  /*change according to window size*/
+    margin-bottom: 10px;
+}
+p#article-title-writer {
+    font-size: 10px;
+    color: whitesmoke;
+    margin-left: 60px;  /*change according to window size*/
+    font-style: oblique;
+    margin-bottom: 40px;
+}
+/*-------------------------right--------------------------------------------------*/
+div.article {
+	width: calc(80% - 550px);
+    min-width: 500px;
+    position: absolute;
+    left: calc(10% + 500px);
+    top: 100px;
+    margin-right: 15%;
+    text-align: center;
+    padding-top:20px;
+    font-size: 15px;
+    color: black;
+    text-indent: 2em;
+    magin-bottom: 0px;
+}
+div.article div {
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 35px;
+    padding-left: 30px;
+}
+div.article span.update {
+    text-align: left;
+    color: rgba(0,0,0,0.5);
+}
+/*-------------------------comment--------------------------------------------------*/
+div.comment {
+	width:100%;
+	background-color: #111142;
+	color: #FFFFFF;
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+div.comment textarea {
+	width: 80%;
+	height: 100px;
+	magin: auto;
+	magin-bottom: 100px;
+}
+div.comment input {
+	width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 13px;
+    text-decoration: none;
+  	cursor: pointer;
+  	box-shadow: 0px 0px 10px #888888;
+  	border: 0px #fff solid;
+  	color: #333366;
+  	background-color: #FFFFFF;
+}
+div.comment input:hover {
+	color: #FFFFFF;
+	background-color: #990033;
+}
+div.comment>form>input:nth-child(3) {
+	position:relative;
+	top: 20px;
+	left: 45%;
+}
+div.comment>form>input:nth-child(4) {
+	position:relative;
+	top: 20px;
+	left: 50%;
+}
+div.others-comment {
+	font-size: 15px;
+	width: 450px;
+	magin: auto;
+	padding: 0px;
+	position: relative;
+	left: -30px;
+}
+div.others-comment p:nth-child(4n+1){
+	text-indent: 0em;
+	font-weight: 700;
+	line-height: 15px;
+}
+div.others-comment p:nth-child(4n+2){
+	text-indent: 2em;
+	line-height: 15px;
+}
+div.others-comment p:nth-child(4n+3) {
+	text-align: right;
+	line-height: 12px;
+	font-size: 12px;
+}
+/*div.others-comment p:nth-child(4n+3) a:link, div.others-comment p:nth-child(4n+3) a:visited {
+	color: #FFFFFF;
+}
+div.others-comment p:nth-child(4n+3) a:hover, div.others-comment p:nth-child(4n+3) a:active {
+	color: #990033;
+}*/
+div.others-comment input {
+	height: 15px;
+	line-height: 15px;
+	background-color: #333366;
+	color: #FFFFFF;
+}

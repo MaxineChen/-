@@ -1,0 +1,130 @@
+html{
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;  
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family:knowledge-reg,helvetica,arial,sans-serif;
+    font-size:10px;
+    margin:0; 
+    background-color: #fff; 
+    width: 100%;
+    height: 100%;
+}
+div.header{
+    background-color: #333366; 
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    font-size:15px;
+    z-index: 6000000;
+}
+
+div.main-logo {
+    position: absolute;
+    top: 16px;
+    left: 10%;
+    font-size: 100px;
+    color: white;
+}
+a{
+    background-color:transparent;
+    text-decoration:none;
+    color:#111;
+    cursor:pointer;
+}
+a:active,a:hover{outline:0;}
+a:hover{color:#990033; text-decoration:none;}
+.horizontal-list li{display:inline-block;}
+/*鍒嗛」*/
+.nav-list{
+    text-align:center;
+    width:1100px;
+    position:relative;
+    top:49px;
+    left: 70%;
+    margin-left:-550px;
+    visibility:visible;
+    opacity:1;
+    -webkit-transition:right .25s ease-in-out,left .25s ease-in-out,opacity .25s ease-in-out .4s,visibility .25s ease-in-out .4s;
+    -moz-transition:right .25s ease-in-out,left .25s ease-in-out,opacity .25s ease-in-out .4s,visibility .25s ease-in-out .4s;
+    transition:right .25s ease-in-out,left .25s ease-in-out,opacity .25s ease-in-out .4s,visibility .25s ease-in-out .4s;
+}
+
+/*绫诲悕*/
+.nav-item{
+    position:relative;
+    text-align:center;
+    z-index:6000000;
+    padding:2px 20px 8px;
+    height:31px;
+    cursor:pointer;
+    -webkit-transition:background .15s ease-in-out;
+    -moz-transition:background .15s ease-in-out;
+    transition:background .15s ease-in-out;
+}
+/*绫诲悕閾炬帴瀛椾綋*/
+.nav-item a{
+    display:block;
+    padding:0;
+    font-family:knowledge-reg,helvetica,arial,sans-serif;
+    font-weight:400;
+    font-size:1.4em;
+    line-height:1.83;
+    color:#fff;
+    text-align:center;
+    -webkit-transition:color .25s ease-in-out;-moz-transition:color .25s ease-in-out;
+    transition:color .25s ease-in-out;
+}
+
+/*閫変腑鏃跺垎绫荤殑绫诲悕搴曡壊浼氭敼鍙�*/
+.nav-item.active-icon.search-tab{position:absolute;right:0;padding-left:0;padding-right:0;}
+li.nav-item:hover{background:#CCCCCC;}
+li.nav-item.no-subnav:hover{background:inherit;}
+li.nav-item.pictures-tab.active-icon:hover div.pictures-icon{background-position:-58px -4px;}
+li.nav-item:hover a.nav-link-sec{color:#444444;border-bottom:none;}
+
+/*鎵撳紑鐨勫垎椤癸紝瀹藉害璁剧疆涓烘暣涓垎椤规鐨勫ぇ灏�*/
+.nav-item .subnav{
+    font-size:10px;
+    position:absolute;
+    top:36px;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1;
+    visibility:hidden;
+    opacity:0;
+    padding:0 2px 2px 0;
+    background:#CCCCCC;
+    width:193px;
+    -webkit-transition:all .05s ease-in-out .20s;
+    -moz-transition:all .05s ease-in-out .20s;
+    transition:all .05s ease-in-out .20s;
+    
+}
+#subnav-1 {width: 200px;}
+#subnav-2 {width: 200px;}
+/*绠＄悊鏆傛椂闅愯棌*/
+#nav-item-6, #nav-item-7, #nav-item-8 {
+    display: none;
+}
+
+.nav-item .subnav.open{-webkit-transition:all .10s ease-in-out;-moz-transition:all .10s ease-in-out;transition:all .10s ease-in-out;}
+.nav-item:hover .subnav{visibility:visible;opacity:1;right:inherit;bottom:inherit;}
+.subnav-inset{padding:5px 7px 5px;border-top:0;background:#CCCCCC;text-align:left;}
+
+/*鍒嗛」涓悇琛ㄧ殑瀹藉害璁剧疆*/
+.nav-item .subnav-list{
+    list-style:none;
+    width:150px;
+    padding:0;
+    margin:0;
+    display:inline-block;
+    text-align:left;
+    vertical-align:text-top;
+}
+.subnav-list li{padding:0;float:none;display:block;}
+.subnav-list li:hover a{color:#990033;}
+.subnav-list a{padding:8px 0 8px 5px;background:none;font-size:1.3em;font-weight:normal;line-height:1.38;color:#333;text-align:left;text-transform:capitalize;}

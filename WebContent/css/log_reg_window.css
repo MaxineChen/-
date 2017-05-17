@@ -1,0 +1,131 @@
+div.log_reg_windows {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+	visibility: hidden;
+}
+div.log, div.reg {
+	width: 500px;
+	position: absolute;
+	left: calc(50% - 250px);
+	top: 150px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 10px #FFFFFF;
+	border-radius: 10px;
+	line-height: 40px;
+	font-size: 15px;
+	color: rgba(0,0,0,0.8);
+	font-weight: 700;
+	vertical-align: center;
+}
+div.log {
+	visibility: hidden;
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+div.reg {
+	visibility: hidden;
+	padding: 50px;
+}
+div.log input, div.reg input {
+	width: 200px;
+	box-shadow:1px 1px 5px rgba(0,0,0,0.3);
+    border-radius: 6px;
+    height: 20px;
+    color: dimgray; 
+}
+div.log span, div.reg span {
+	font-size: 10px;
+	color: red;
+	font-weight: 200;
+}
+div.reg label {
+	position: relative;
+	color: rgba(0,0,0,0.5);
+	top: -5px;
+}
+div.reg input {
+	position: absolute;
+	left: 150px;
+}
+div.reg span {
+	position: relative;
+	left: 260px;
+	top: -5px;
+}
+div.log label {
+	position: relative;
+	color: rgba(0,0,0,0.5);
+	left: 70px;
+	top: 50px;
+}
+div.log input {
+	position: relative;
+    left: 100px;
+    top: 50px;
+}
+div.log span {
+	position: relative;
+	left: 120px;
+	top: 50px;
+}
+
+span#reg_message2, span#reg_message3 {
+	color: rgba(0,0,0,0.5);
+}
+
+div.head-cancel-button, div.head-save-button {
+	display: inline-block;
+}
+
+div.log div.head-cancel-button{
+	position: relative;
+	left: 10px;
+}
+div.reg div.head-cancel-button{
+	position: relative;
+	top: -30px;
+	left: 50px;
+}
+div.reg div.head-save-button{
+	position: relative;
+	top: -30px;
+	left: -130px;
+}
+div.head-save-button input, div.head-cancel-button input {
+	width: 80px;
+    height: 35px;
+    background-color: #333366;
+    color: white;
+    border-radius: 10px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 13px;
+    text-decoration: none;
+  	cursor: pointer;
+  	box-shadow: 0px 0px 5px #888888;
+  	border: 0px #fff solid;
+  	display: inline-block;
+}
+div.head-save-button input:hover, div.head-cancel-button input:hover {
+	background-color: white;
+     color: #333366;
+}
+div.log a {
+	color: rega(0,0,0,0.3);
+	font-weight: 200;
+	font-size: 10px;
+	position: absolute;
+	top: 140px;
+	left: 370px;
+}
+div.log a:last-child {
+	left: 400px;
+}
